@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main_body */
+.main_body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.5) 50%),
+        url(Image/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Nav_Bar */
+.navbar {
+    width: 100%;
+    height: 75px;
+    margin: auto;
+    padding: 10px;
+    /* border: 2px solid blue; */
+}
+
+/* Logo */
+.logo_box {
+    width: 200px;
+    height: 75px;
+    float: left;
+    margin-left: 20px;
+    /* border: 1px solid green; */
+}
+
+.logo {
+    color: rgba(238, 100, 50);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* Menu */
+.menu {
+    width: 400px;
+    height: 75px;
+    float: left;
+    padding-left: 130px;
+    /* border: 1px solid red; */
+}
+
+.menu ul {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu li a:hover {
+    color: rgba(238, 100, 50);
+}
+
+/* Search_Box */
+.search_box {
+    width: 330px;
+    float: right;
+    /* border: 1px solid white; */
+}
+
+.srch {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgb(238, 100, 50);
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.btn-search {
+    width: 100px;
+    height: 40px;
+    background: rgb(238, 100, 50);
+    border: 2px solid rgb(238, 100, 50);
+    margin-top: 13px;
+    color: rgb(17, 16, 16);
+    font-size: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-search:hover {
+    color: #ffffff;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+.btn-search:focus {
+    outline: none;
+}
+
+/* CSS for Content */
+.content {
+    margin-top: 40px;
+    width: 750px;
+    height: auto;
+}
+
+/* Left Side */
+.left {
+    height: auto;
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+/* Color for  two span tags  */
+.scol {
+    color: rgb(238, 100, 50);
+}
+
+.para {
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.btn-join {
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: rgb(238, 100, 50);
+    border: 1px solid rgb(238, 100, 50);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 10px;
+    transition: 0.3s ease-in;
+}
+
+.btn-join:hover {
+    color: #ffffff;
+}
+
+/* Right Side */
+.right {
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
+    position: absolute;
+    top: 180px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.right h2 {
+    width: 200px;
+    height: 35px;
+    color: rgba(238, 100, 50);
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 20px 5px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 2px 0px 0px 35px;
+}
+
+/* Form */
+.right .email,
+.pwd {
+    width: 250px;
+    height: 30px;
+    background-color: transparent;
+    margin-top: 30px;
+    color: #ffffff;
+    border: 1px solid rgba(238, 100, 50);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+input::placeholder {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:hover::placeholder {
+    transform: translateY(-10px);
+}
+
+.right .email,
+.pwd:focus {
+    letter-spacing: 2px;
+    outline: none;
+}
+
+/* Login Button */
+.btn-login {
+    width: 180px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000000;
+    background-color: rgb(238, 100, 50);
+    border: 1px solid rgb(238, 100, 50);
+    border-radius: 5px;
+    transition: 0.3s ease-in;
+}
+
+.btn-login:hover {
+    color: #ffffff;
+}
+
+/* Sign up */
+.register {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.register a {
+    text-decoration: none;
+}
+
+.register a:active {
+    color: #ffffff;
+}
+
+.register a:visited {
+    color: rgb(238, 100, 50);
+}
+
+.icons {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.icons a {
+    margin-right: 10px;
+}
+
+.icons a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.icons a:visited {
+    color: #ffffff;
+}
+
+.icons a:hover {
+    color: rgb(238, 100, 50);
+}
