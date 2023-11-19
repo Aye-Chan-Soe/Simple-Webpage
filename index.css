@@ -16,21 +16,16 @@
 
 /* Nav_Bar */
 .navbar {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 75px;
     margin: auto;
     padding: 10px;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
 }
 
 /* Logo */
-.logo_box {
-    width: 200px;
-    height: 75px;
-    float: left;
-    margin-left: 20px;
-    /* border: 1px solid green; */
-}
 
 .logo {
     color: rgba(238, 100, 50);
@@ -38,20 +33,21 @@
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 10px;
     padding-top: 10px;
+    border: 1px solid green;
 }
 
 /* Menu */
 .menu {
     width: 400px;
     height: 75px;
-    float: left;
-    padding-left: 130px;
-    /* border: 1px solid red; */
+    /* display: flex;
+    justify-content: space-between;
+    align-content: center; */
+    border: 1px solid red;
 }
 
 .menu ul {
     display: flex;
-    float: left;
     justify-content: center;
     align-items: center;
 }
@@ -78,9 +74,9 @@
 
 /* Search_Box */
 .search_box {
+    display: flex;
     width: 330px;
-    float: right;
-    /* border: 1px solid white; */
+    border: 1px solid white;
 }
 
 .srch {
@@ -92,7 +88,6 @@
     color: white;
     border-right: none;
     font-size: 16px;
-    float: left;
     padding: 10px;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
